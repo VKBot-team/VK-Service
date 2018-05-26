@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VKApi", "VKApi\VKApi.csproj", "{DBF64BF0-68A8-4CE6-AEBB-1A593304D5CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VKApi", "VKApi\VKApi.csproj", "{2C64F6EC-AE6B-407E-8CBD-9E8D8003DF41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DBF64BF0-68A8-4CE6-AEBB-1A593304D5CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DBF64BF0-68A8-4CE6-AEBB-1A593304D5CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DBF64BF0-68A8-4CE6-AEBB-1A593304D5CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DBF64BF0-68A8-4CE6-AEBB-1A593304D5CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C64F6EC-AE6B-407E-8CBD-9E8D8003DF41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C64F6EC-AE6B-407E-8CBD-9E8D8003DF41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C64F6EC-AE6B-407E-8CBD-9E8D8003DF41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C64F6EC-AE6B-407E-8CBD-9E8D8003DF41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F4009EA0-4028-4720-8CC5-9F70C8020A36}
+		SolutionGuid = {4CB327C7-44EC-4CB8-AD2F-6A08F887D1E2}
 	EndGlobalSection
 EndGlobal

@@ -10,14 +10,14 @@ namespace VKApi
     {
         private const string UriTamplate = "https://api.vk.com/method/{0}?{1}&access_token={2}&v={3}";
 
-        public static async Task ExecMethod(Method method, Dictionary<string, string> attributes)
+        public static async Task<string> ExecMethod(Method method, Dictionary<string, string> attributes)
         {
             var stringAttributes = string.Join("&", attributes.Select((e, i) => $"{e.Key}={e.Value}"));
 
             var uri = string.Format(UriTamplate, method.GetStringValue(), stringAttributes, Settings.ApiKey,
                 Settings.VkApiVersion);
 
-            await GetAsync(uri);
+            return await GetAsync(uri);
         }
 
         private static async Task<string> GetAsync(string uri)

@@ -5,8 +5,8 @@ namespace VKApi
 {
     public enum Method
     {
-        [EnumString("messages.send")]
-        MessageSend
+        [EnumString("messages.send")] MessageSend,
+        [EnumString("groups.getMembers")] GetMembers
     }
 
     public class EnumStringAttribute : Attribute

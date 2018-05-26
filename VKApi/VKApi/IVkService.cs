@@ -5,5 +5,6 @@ namespace VKApi
     public interface IVkService
     {
         Task SendMessageById(string userId, string message);
+        Task<string[]> GetGroupUsers();
     }
 }
