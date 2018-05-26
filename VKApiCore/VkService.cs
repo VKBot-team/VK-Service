@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
@@ -21,7 +22,7 @@ namespace VKApiCore
         {
             var result = await VkApi.ExecMethod(Method.GetMembers, new Dictionary<string, string>
             {
-                {"group_id", Settings.GroupId}
+                { "group_id", Settings.GroupId }
             });
 
             var jsonData = JsonConvert.DeserializeObject<Response>(result);
