@@ -2,9 +2,9 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using VKApi.JSONObject;
+using VKApiCore.JSONObjects;
 
-namespace VKApi
+namespace VKApiCore
 {
     public class VkService
     {

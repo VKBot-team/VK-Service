@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection;
 
-namespace VKApi
+namespace VKApiCore
 {
     public enum Method
     {

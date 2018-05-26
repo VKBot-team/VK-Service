@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace VKApi
+namespace VKApiCore
 {
     public interface IVkService
     {

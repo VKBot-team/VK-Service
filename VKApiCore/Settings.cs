@@ -1,4 +1,4 @@
-﻿namespace VKApi
+﻿namespace VKApiCore
 {
     public static class Settings
     {

@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace VKApi.JSONObject
+namespace VKApiCore.JSONObjects
 {
     public class Response
     {
