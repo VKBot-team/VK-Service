@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using System.IO;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
@@ -13,8 +13,29 @@ namespace VKApiCore
         {
             await VkApi.ExecMethod(Method.MessageSend, new Dictionary<string, string>
             {
-                {"user_id", userId},
-                {"message", message}
+                { "user_id", userId },
+                { "message", message }
+            });
+        }
+
+        public async Task SendMessagesByIds(string[] userIds, string message)
+        {
+            if (userIds.Length > 100)
+                throw new ArgumentException("Users should be less or equal than 100");
+
+            await VkApi.ExecMethod(Method.MessageSend, new Dictionary<string, string>
+            {
+                { "user_ids", string.Join(',', userIds) },
+                { "message", message }
+            });
+        }
+
+        public async Task SendGifById(string userId, string gifLink)
+        {
+            await VkApi.ExecMethod(Method.MessageSend, new Dictionary<string, string>
+            {
+                { "user_id", userId },
+                { "attachment", gifLink }
             });
         }
 
