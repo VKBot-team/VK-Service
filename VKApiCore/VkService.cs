@@ -7,7 +7,7 @@ using VKApiCore.JSONObjects;
 
 namespace VKApiCore
 {
-    public class VkService
+    public class VkService: IVkService
     {
         public async Task SendMessageById(string userId, string message)
         {
